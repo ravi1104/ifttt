@@ -5,14 +5,18 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String a = "Ravi Ranjan";
+    final String a = "Ravi Ranjan Yadav";
     final int b = 11;
-    return Material(
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("First App"),
+      ),
+      body: Center(
         child: Container(
           child: Text("Wlcome $a Sir $b yOU"),
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
